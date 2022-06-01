@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import PrimerComponente from './componentes/PrimerComponente';
 
 
 class Producto {
@@ -8,20 +9,34 @@ class Producto {
     this.tipo = tipo;
   }
 
+  leerProducto (nombre,tipo) {
 
-}
+    const listado = [nombre,tipo]
+    console.log(listado)
+    }
+
+  }
+  
+
 const cafe = new Producto ("Cafe", "Premium")
 
-alert(cafe)
+console.log(cafe)
+
 
 function App() {
 
 
   return (
+    <>
     <div className="App">
+      <PrimerComponente/>
+    <h1> Titulo App</h1>
+    <p> Probando el texto </p>
 
     </div>
+    </>
   );
 }
 
 export default App;
+
