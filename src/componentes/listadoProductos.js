@@ -24,7 +24,7 @@ export const productos =
 /* ARRAYS */
 
 
-const arreglo = [1,2,3,4,5,6,7,8,9,10];
+/* const arreglo = [1,2,3,4,5,6,7,8,9,10];
 
 console.log(arreglo)
 
@@ -38,7 +38,7 @@ const arregloMap = arreglo.map(function (item) {
 })
 
 console.log(arregloMap)
-
+ */
 
 /* ------------------------------------------ */
 
@@ -75,7 +75,7 @@ const getUsuarioActivo =  (nombre) =>
 console.log(getUsuarioActivo("Nicolas")) */
 
 
-/* DESTRUCTURING */
+/* DESTRUCTURING  */
 /* ------------------------------------------------------------- */
 
 const persona = {
@@ -86,10 +86,10 @@ const persona = {
 }
 
  
-  const {nombre, edad , clave } = persona 
+/*   const {nombre, edad , clave } = persona  */
 
 
-const usarContexto = ({nombre,edad,clave}) => {
+/* const usarContexto = ({nombre,edad,clave}) => {
 
 return {
 
@@ -107,9 +107,47 @@ console.log(retornalo)
 const {primerdato,segundodato,tercerdato} = usarContexto()
 
 
-console.log(primerdato)
+console.log(primerdato) */
 
   
+// DE ARRAYS
+
+const cafes = ["espresso", "lavazza", "illy", "nescafe"]
+
+
+const [espresso, lavazza, illy, nescafe] = cafes;
+
+const agarrarlo = espresso
+
+console.log(agarrarlo)
+
+
+const retornaArreglo = () => {
+  return ["letra", 123]
+
+}
+
+const arreglo = retornaArreglo()
+
+const [primero, numeros ] = arreglo
+
+console.log(primero, numeros)
+
+
+const usarEstado = (valor) => {
+   
+  return [
+
+          valor, () => {console.log("Hola Mundo")}
+
+  ]
+}
+
+
+const [nombre, setNombre] = usarEstado(1)
+
+console.log(nombre)
+setNombre()
 
 
 /* --------------------------------------------------------------------- */
