@@ -21,6 +21,9 @@ export const productos =
 
 
 
+/* ARRAYS */
+
+
 const arreglo = [1,2,3,4,5,6,7,8,9,10];
 
 console.log(arreglo)
@@ -30,16 +33,85 @@ const arreglo1 = {...arreglo, 10:11}
 console.log(arreglo1)
 
 
+const arregloMap = arreglo.map(function (item) { 
+  return `Tu numero es ${item *2}`;
+})
 
-/* const nueva_copia = arreglo.map() */
+console.log(arregloMap)
 
 
+/* ------------------------------------------ */
 
-/* const handleArreglo = () => {
+/* FUNCTIONS */
 
- nueva_copia.map ( (item) => { 
+
+/* const saludar = function (nombre) {
+  return `Hola ${nombre}`;
+}
+
+console.log(saludar)
+
+const saludar2 = (nombre) => { 
+return {
+        id: 1,
+        username: nombre,
+}
+}
+
+console.log(saludar2)
+
+const usuario = saludar2("Nicolas")
+
+console.log(usuario)
+
+const getUsuarioActivo =  (nombre) => 
+
+({
+    uid:"1111",
+    username: nombre,
+})
+
+
+console.log(getUsuarioActivo("Nicolas")) */
+
+
+/* DESTRUCTURING */
+/* ------------------------------------------------------------- */
+
+const persona = {
+  nombre: "Nicolas",
+  edad: 25,
+  clave: "123",
   
-  return (item + 1)}) }
+}
 
-  console.log(handleArreglo); */
+ 
+  const {nombre, edad , clave } = persona 
+
+
+const usarContexto = ({nombre,edad,clave}) => {
+
+return {
+
+   primerdato: nombre ,
+    segundoDato: edad,
+    tercerDato: clave,
+}
+}
+
+const retornalo = usarContexto(nombre)
+
+console.log(retornalo)
+
+
+const {primerdato,segundodato,tercerdato} = usarContexto()
+
+
+console.log(primerdato)
+
+  
+
+
+/* --------------------------------------------------------------------- */
+
 
