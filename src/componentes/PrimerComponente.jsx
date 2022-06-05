@@ -1,7 +1,7 @@
 import React from "react";
 import {productos} from "./listadoProductos";
 
-const PrimerComponente = () => {
+const PrimerComponente = (props) => {
 
   
   const listado = productos.map((item) => {
@@ -9,9 +9,6 @@ const PrimerComponente = () => {
 
 
   });
-
-
-
 
   return (
     <div>
