@@ -119,7 +119,7 @@ const [espresso, lavazza, illy, nescafe] = cafes;
 
 const agarrarlo = espresso
 
-console.log(agarrarlo)
+/* console.log(agarrarlo) */
 
 
 const retornaArreglo = () => {
@@ -131,7 +131,7 @@ const arreglo = retornaArreglo()
 
 const [primero, numeros ] = arreglo
 
-console.log(primero, numeros)
+/* console.log(primero, numeros) */
 
 
 const usarEstado = (valor) => {
@@ -144,11 +144,11 @@ const usarEstado = (valor) => {
 }
 
 
-const [nombre, setNombre] = usarEstado(1)
+/* const [nombre, setNombre] = usarEstado(1)
 
 console.log(nombre)
 setNombre()
-
+ */
 
 /* --------------------------------------------------------------------- */
 

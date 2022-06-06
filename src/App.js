@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './App.css';
 import PrimerComponente from './componentes/PrimerComponente';
 import heroes from './data';
-
+import peticion from './fetch';
 
 function App() {
   
@@ -80,6 +80,13 @@ busquedaAsync(4).catch (() => {
 console.error("")
 
 })
+
+
+
+
+
+
+
 
   return (
 

@@ -24,7 +24,7 @@ let listado1 = "Probando";
 
 const concatenado = `La formula es ${listado1}`;
 
-console.log(concatenado)
+/* console.log(concatenado) */
 
 export default PrimerComponente;
 
